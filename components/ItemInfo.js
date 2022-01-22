@@ -1,7 +1,7 @@
 import styles from "../styles/Info.module.css";
 import addToPlaylist from "../lib/addToPlaylist";
 import addRandomSongs from "../lib/addRandomSongs";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { useEffect } from "react";
 
 export default function ItemInfo({ topItems, id, token, alertFunc }) {

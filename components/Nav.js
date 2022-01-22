@@ -1,11 +1,9 @@
-import { useState } from "react/cjs/react.development";
-import { useRouter } from "next/router";
+import { useState } from "react";
 import Link from "next/link";
 import authURL from "../lib/authRequest";
 
 export default function Nav({ hash }) {
   const [active, setActive] = useState(false);
-  const router = useRouter();
 
   return (
     <nav id={active ? "active" : "inactive"}>
