@@ -1,0 +1,11 @@
+.alertContainer {
+  position: fixed;
+  width: 100%;
+  background-color: brown;
+  top: -20%;
+  transition: top 0.5s;
+}
+
+.alertMessage {
+  text-align: center;
+}

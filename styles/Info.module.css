@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.addButton {
+  display: inline;
+  font-size: 20px;
+  color: #e4e4e4;
+  font-weight: bold;
+  flex: 1;
+  max-width: 250px;
+}
+
+.artist {
+  text-align: center;
+}
+
+.headerCentered {
+  text-align: center;
+}
+
+.shuffleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #344e41bd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.shuffleButton {
+  width: 75%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.shuffleAmount {
+  width: 75%;
+  max-width: 400px;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
