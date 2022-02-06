@@ -3,6 +3,7 @@ import addToPlaylist from "../lib/addToPlaylist";
 import addRandomSongs from "../lib/addRandomSongs";
 import { useState } from "react";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function ItemInfo({ topItems, id, token, alertFunc }) {
   const [rngAmount, setRngAmount] = useState(topItems ? topItems.length : 0);
@@ -25,7 +26,12 @@ export default function ItemInfo({ topItems, id, token, alertFunc }) {
         return (
           <li key={topItems.indexOf(item)}>
             <div className={styles.container}>
-              <span>{item.name}</span>
+              <span className={styles.infoSpan}>{item.name}</span>
+              <img
+                src={item.album.images[2].url}
+                alt=""
+                className={styles.previewImage}
+              />
               <span className={styles.artist}>{item.artists[0].name}</span>
               <button
                 onClick={(e) => {
