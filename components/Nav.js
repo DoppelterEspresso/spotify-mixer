@@ -23,14 +23,17 @@ export default function Nav({ hash }) {
       </div>
       <span
         id="nav-toggle"
-        onClick={() => {
+        onClick={(ev) => {
           if (active) {
             setActive(false);
           } else {
             setActive(true);
           }
+          ev.target.classList.toggle("arrow-active");
         }}
-      ></span>
+      >
+        🢂
+      </span>
     </nav>
   );
 }
